@@ -18,7 +18,7 @@
          </publicationStmt>
          <sourceDesc>
             <biblStruct>
-               <monogr>
+                <monogr>
                   <editor>Gallimard</editor>
                   <title><hi rend ="italique"> Les Fleurs du Mal </hi> </title>
                   <imprint>
@@ -26,7 +26,7 @@
                      <publisher>CPI Bussière</publisher>
                      <date>2005</date>
                   </imprint>
-               </monogr>
+                </monogr>
             </biblStruct>
          </sourceDesc>
       </fileDesc>
