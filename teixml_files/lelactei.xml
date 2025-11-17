@@ -1,91 +1,129 @@
-Aucune information de style ne semble associée à ce fichier XML. L’arbre du document est affiché ci-dessous.
-<TEI xml:lang="en">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
-<fileDesc>
-<titleStmt>
-<title>TEI with maximal setup</title>
-<author>Sebastian Rahtz</author>
-</titleStmt>
-<publicationStmt>
-<publisher>TEI Consortium</publisher>
-<availability status="free">
-<p>
-TEI material can be licensed differently depending on the use you intend to make of it. Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is generally appropriate for usages which treat TEI content as data or documentation. The BSD-2 licence is generally appropriate for usage of TEI content in a software environment. For further information or clarification, please contact the TEI Consortium (info@tei-c.org).
-</p>
-</availability>
-</publicationStmt>
-<sourceDesc>
-<p>Written from scratch.</p>
-</sourceDesc>
-</fileDesc>
-</teiHeader>
-<text>
-<body>
-<head>TEI Complete</head>
-<p>
-This TEI customization describes a schema that includes
-<emph>all</emph>
-of the TEI P5 modules. This is a very useful starting place for manually creating your own customizations — it is much easier to delete the modules you do not want than to add the modules you do. Furthermore this customization often proves helpful for testing TEI software.
-</p>
-<p>
-However, this particular TEI customization is
-<emph>not recommended</emph>
-for actual use for encoding documents. It produces schemas and reference documentation that will be much larger and include many more elements than almost anyone could conceivably ever need. Tempting though it may be simply to have absolutely everything, and
-<q>just ignore</q>
-elements not required, experience has shown that their presence makes the documentation harder to read and use, and makes a schema that is far more lax than desired.
-</p>
-<p>
-The
-<att>n</att>
-attribute of each
-<gi>moduleRef</gi>
-below reflects the chapter number of the TEI
-<title>Guidelines</title>
-in which the module being referenced is defined. Note that the modules are generally referred to in the order defined, with the exception that the module for
-<title level="a">Simple Analytic Mechanisms</title>
-is referred to before the module for
-<title level="a">Dictionaries</title>
-. This is because the class
-<name type="class">att.lexicographic.normalized</name>
-(which is defined in
-<name type="module">analysis</name>
-) needs to be specified before the class
-<name type="class">att.lexicographic</name>
-(which is defined in
-<name type="module">dictionaries</name>
-).
-</p>
-<p>
-The first four modules are often called the
-<soCalled>required</soCalled>
-modules. However, these modules are not themselves technically required to create a TEI conformant markup language (let alone a useful non-TEI conformant markup language). Rather, they each contain one or more
-<emph>elements</emph>
-which are required for TEI conformance.
-</p>
-<schemaSpec ident="tei_all" start="TEI teiCorpus">
-<moduleRef n="01" key="tei"/>
-<moduleRef n="02" key="header"/>
-<moduleRef n="03" key="core"/>
-<moduleRef n="04" key="textstructure"/>
-<moduleRef n="05" key="gaiji"/>
-<moduleRef n="06" key="verse"/>
-<moduleRef n="07" key="drama"/>
-<moduleRef n="08" key="spoken"/>
-<moduleRef n="09" key="cmc"/>
-<moduleRef n="18" key="analysis"/>
-<moduleRef n="10" key="dictionaries"/>
-<moduleRef n="11" key="msdescription"/>
-<moduleRef n="12" key="transcr"/>
-<moduleRef n="13" key="textcrit"/>
-<moduleRef n="14" key="namesdates"/>
-<moduleRef n="15" key="figures"/>
-<moduleRef n="16" key="corpus"/>
-<moduleRef n="17" key="linking"/>
-<moduleRef n="19" key="iso-fs"/>
-<moduleRef n="20" key="nets"/>
-<moduleRef n="22" key="certainty"/>
-<moduleRef n="23" key="tagdocs"/>
-</schemaSpec>
-</body>
-</text>
+      <fileDesc>
+         <titleStmt>
+            <title>TEI-XML encoding project portfolio — Le Lac </title>
+            <respStmt>
+               <resp>encoding by</resp>
+               <name>Joséphine Maire</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>I do not have a lot of informations about this text because I found it online, without metadata. It seems to be a scholar edition of the Meditations Poétiques written by Alphonse de Lamartine.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>I do not have a lot of informations about this text because I found it online, without metadata. It seems to be a scholar edition of the Meditations Poétiques written by Alphonse de Lamartine.</p>
+         </sourceDesc>
+      </fileDesc>
+   <encodingDesc>
+      <projectDesc>
+         <p> Editing in TEI-XML the poem <hi rend ="italique"> Le lac </hi> written by Alphonse de Lamartine</p>
+      </projectDesc>
+   </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <lg type="stanza">
+            <lg type="quatrain">
+               <l n="1" met="alexandrin">Ainsi, toujours poussés vers de nouveaux rivages,</l>
+               <l n="2" met ="alexandrin">Dans la nuit éternelle emportés sans retour,</l>
+               <l n="3" met="alexandrin">Ne pourrons-nous jamais sur l'océan des âges</l>
+               <l n="4" met="hexasyllabe">Jeter l'ancre un seul jour ?</l>
+            </lg>
+            <lg type="quatrain">
+               <l n="5" met="alexandrin">Ô lac ! l'année à peine a fini sa carrière,</l> 
+               <l n="6" met ="alexandrin">Et près des flots chéris qu'elle devait revoir,</l> 
+               <l n="7" met="alexandrin">Regarde ! je viens seul m'asseoir sur cette pierre </l>
+               <l n="8" met="hexasyllabe">Où tu la vis s'asseoir !</l> 
+            </lg>
+            <lg type="quatrain">
+               <l n="9" met="alexandrin">Tu mugissais ainsi sous ces roches profondes,</l>
+               <l n="10" met="alexandrin">Ainsi tu te brisais sur leurs flancs déchirés,</l>
+               <l n="11" met="alexandrin">Ainsi le vent jetait l'écume de tes ondes </l>
+               <l n="12" met="hexasyllabe">Sur ses pieds adorés.</l>    
+            </lg>
+            <lg type="quatrain">
+               <l n="13" met="alexandrin">Un soir, t'en souvient-il ? nous voguions en silence ;</l>
+               <l n="14" met="alexandrin">On n'entendait au loin, sur l'onde et sous les cieux,</l>
+               <l n="15" met="alexandrin">Que le bruit des rameurs qui frappaient en cadence </l>
+               <l n="16" met="hexasyllabe">Tes flots harmonieux.</l> 
+            </lg> 
+     
+            <lg type="quatrain">
+               <l n="17" met="alexandrin">Tout à coup des accents inconnus à la terre</l>
+               <l n="18" met="alexandrin">Du rivage charmé frappèrent les échos ;</l>    
+               <l n="19" met="alexandrin">Le flot fut attentif, et la voix qui m'est chère</l>
+               <l n="20" met="hexasyllabe">Laissa tomber ces mots :</l>
+            </lg>
+            <lg type="quatrain">
+               <l n="21" met="alexandrin">"Ô temps ! suspends ton vol, et vous, heures propices !</l>
+               <l n="22" met="alexandrin">Suspendez votre cours :</l> 
+               <l n="23" met="alexandrin">Laissez-nous savourer les rapides délices</l>  
+               <l n="24" met="hexasyllabe">Des plus beaux de nos jours !</l>
+             </lg>
+             <lg type="quatrain">
+                <l n="25" met="alexandrin">"Assez de malheureux ici-bas vous implorent,</l>
+                <l n="26" met="alexandrin">Coulez, coulez pour eux ;</l>
+                <l n="27" met="alexandrin"> Prenez avec leurs jours les soins qui les dévorent ;</l>
+                <l n="28" met="hexasyllabe">Oubliez les heureux.</l>  
+             </lg>
+             <lg type="quatrain">
+                <l n="29" met="alexandrin"> "Mais je demande en vain quelques moments encore,</l>
+                <l n="30" met="hexasyllabe">  Le temps m'échappe et fuit ;</l>
+                <l n="31" met="alexandrin">Je dis à cette nuit : Sois plus lente ; et l'aurore</l>
+                <l n="32" met="hexasyllabe">Va dissiper la nuit.</l>
+             </lg>
+             <lg type="quatrain">
+               <l n="33" met="alexandrin">" Aimons donc, aimons donc ! de l'heure fugitive,</l>
+               <l n="34" met="hexasyllabe"> Hâtons-nous, jouissons !</l> 
+                <l n="35" met="alexandrin"> L'homme n'a point de port, le temps n'a point de rive ;</l>  
+               <l n="36" met="hexasyllabe"> Il coule, et nous passons ! "</l>
+            </lg>
+            <lg type="quatrain">
+               <l n="37" met="alexandrin">Temps jaloux, se peut-il que ces moments d'ivresse,</l>
+               <l n="38" met="alexandrin">Où l'amour à longs flots nous verse le bonheur,</l>
+               <l n="39" met="alexandrin">S'envolent loin de nous de la même vitesse</l>
+               <l n="40" met="hexasyllabe">Que les jours de malheur ?</l>   
+            </lg>
+            <lg type="quatrain">
+               <l n="41" met="alexandrin">Eh quoi ! n'en pourrons-nous fixer au moins la trace ?</l>
+               <l n="42" met="alexandrin">Quoi ! passés pour jamais ! quoi ! tout entiers perdus !</l>
+               <l n="43" met="alexandrin">Ce temps qui les donna, ce temps qui les efface,</l>
+               <l n="44" met="hexasyllabe">Ne nous les rendra plus !</l>  
+            </lg>
+            <lg type="quatrain">
+               <l n="45" met="alexandrin">Éternité, néant, passé, sombres abîmes,</l>
+               <l n="46" met="alexandrin">Que faites-vous des jours que vous engloutissez ?</l>
+               <l n="47" met="alexandrin">Parlez : nous rendrez-vous ces extases sublimes</l>
+               <l n="48" met="hexasyllabe">Que vous nous ravissez ? </l>  
+            </lg>
+            <lg type="quatrain">
+               <l n="49" met="alexandrin"> Ô lac ! rochers muets ! grottes ! forêt obscure !</l>
+               <l n="50" met="alexandrin">  Vous, que le temps épargne ou qu'il peut rajeunir,</l>
+               <l n="51" met="alexandrin"> Gardez de cette nuit, gardez, belle nature,</l> 
+               <l n="52" met="hexasyllabe"> Au moins le souvenir !</l>
+            </lg>
+            <lg type="quatrain">
+               <l n="53" met="alexandrin">Qu'il soit dans ton repos, qu'il soit dans tes orages,</l>
+               <l n="54" met="alexandrin"> Beau lac, et dans l'aspect de tes riants coteaux,</l>  
+               <l n="55" met="alexandrin"> Et dans ces noirs sapins, et dans ces rocs sauvages</l> 
+               <l n="56" met="hexasyllabe">Qui pendent sur tes eaux.</l>
+            </lg>
+            <lg type="quatrain">
+               <l n="57" met="alexandrin"> Qu'il soit dans le zéphyr qui frémit et qui passe,</l>
+               <l n="58" met="alexandrin"> Dans les bruits de tes bords par tes bords répétés,</l> 
+               <l n="59" met="alexandrin">Dans l'astre au front d'argent qui blanchit ta surface </l>
+               <l n="60" met="hexasyllabe"> De ses molles clartés.</l>
+            </lg>
+            <lg type="quatrain">
+               <l n="61" met="alexandrin">Que le vent qui gémit, le roseau qui soupire,</l>
+               <l n="62" met="alexandrin">Que les parfums légers de ton air embaumé,</l>
+               <l n="63" met="alexandrin">Que tout ce qu'on entend, l'on voit ou l'on respire,</l> 
+               <l n="64" met="hexasyllabe">  Tout dise : Ils ont aimé !</l>
+            </lg>
+            </lg>
+      </body>
+  </text>
 </TEI>
